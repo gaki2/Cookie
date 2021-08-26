@@ -5,16 +5,22 @@ import './index.css';
 
 
 function MakeCookie() {
-  Cookies.set('nameaa','value', {expires : 365});
+  Cookies.set('goodcookie', '4000', { expires : 7});
 }
 
 function Root() {
-  // MakeCookie();
+  MakeCookie();
+  getCookie();
   return (
     <div>
        <h1>Cookie Example</h1>
     </div>
   )
+}
+
+function getCookie() {
+  let cookies = document.cookie;
+  console.log(cookies);
 }
 
 function App() {
