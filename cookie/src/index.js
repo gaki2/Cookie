@@ -3,14 +3,12 @@ import ReactDOM from 'react-dom';
 import Cookies from 'js-cookie'
 import './index.css';
 
-
-function MakeCookie() {
-  Cookies.set('goodcookie', '4000', { expires : 7});
+function makeCookies() {
+  Cookies.set('new_Cookie', 'sexy_guys_yeah', {expires: 7});
 }
 
 function Root() {
-  MakeCookie();
-  getCookie();
+  makeCookies();
   return (
     <div>
        <h1>Cookie Example</h1>
