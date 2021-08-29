@@ -4,7 +4,7 @@ import Cookies from 'js-cookie'
 import './index.css';
 
 function makeCookies() {
-  Cookies.set('new_Cookie', 'sexy_guys_yeah', {expires: 7});
+  Cookies.set('title','value');
 }
 
 function Root() {
